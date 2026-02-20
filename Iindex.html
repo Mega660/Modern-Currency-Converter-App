@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- root HTML element specifies language -->
+<html lang="en">
+<head>
+    <!-- metadata and stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <!-- page content container -->
+    <div class="wrapper">
+        <header>
+            <!-- main heading -->
+            Mega Currency Converter
+        </header>
+
+        <form action="#">
+            <!-- input form for amount and currency selectors -->
+            <div class="amount">
+                <!-- amount entry field -->
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+
+            <div class="droplist">
+                <!-- dropdowns for selecting currencies -->
+
+                <div class="from">
+                    <!-- source currency selector -->
+                    <p>From</p>
+                    <div class="selectbox">
+                        <img src="https://flagsapi.com/NG/flat/64.png">
+                        <select>
+                            <option value="GHS">GHS</option>
+                            <option value="DZD">DZD</option>
+                            <option value="AOA">AOA</option>
+                            <option value="XOF">XOF</option>
+                            <option value="BWP">BWP</option>
+                            <option value="BIF">BIF</option>
+                            <option value="XAF">XAF</option>
+                            <option value="CVE">CVE</option>
+                            <option value="CDF">CDF</option>
+                            <option value="KMF">KMF</option>
+                            <option value="DJF">DJF</option>
+                            <option value="EGP">EGP</option>
+                            <option value="ERN">ERN</option>
+                            <option value="SZL">SZL</option>
+                            <option value="ETB">ETB</option>
+                            <option value="GMD">GMD</option>
+                            <option value="GHS">GHS</option>
+                            <option value="GNF">GNF</option>
+                            <option value="KES">KES</option>
+                            <option value="LSL">LSL</option>
+                            <option value="LRD">LRD</option>
+                            <option value="LYD">LYD</option>
+                            <option value="MGA">MGA</option>
+                            <option value="MWK">MWK</option>
+                            <option value="MRU">MRU</option>
+                            <option value="MUR">MUR</option>
+                            <option value="MAD">MAD</option>
+                            <option value="MZN">MZN</option>
+                            <option value="NAD">NAD</option>
+                            <option value="NGN">NGN</option>
+                            <option value="RWF">RWF</option>
+                            <option value="SCR">SCR</option>
+                            <option value="SLL">SLL</option>
+                            <option value="SOS">SOS</option>
+                            <option value="ZAR">ZAR</option>
+                            <option value="SSP">SSP</option>
+                            <option value="SDG">SDG</option>
+                            <option value="TZS">TZS</option>
+                            <option value="TND">TND</option>
+                            <option value="UGX">UGX</option>
+                            <option value="ZMW">ZMW</option>
+                            <option value="ZWL">ZWL</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="icon">
+                    <i class="fas fa-arrow-right-arrow-left"></i>
+                </div>
+
+                <div class="to">
+                    <!-- target currency selector -->
+                    <p>To</p>
+                    <div class="selectbox">
+                        <img src="https://flagsapi.com/GH/flat/64.png">
+                        <select>
+                            <option value="GHS">GHS</option>
+                            <option value="DZD">DZD</option>
+                            <option value="AOA">AOA</option>
+                            <option value="XOF">XOF</option>
+                            <option value="BWP">BWP</option>
+                            <option value="BIF">BIF</option>
+                            <option value="XAF">XAF</option>
+                            <option value="CVE">CVE</option>
+                            <option value="CDF">CDF</option>
+                            <option value="KMF">KMF</option>
+                            <option value="DJF">DJF</option>
+                            <option value="EGP">EGP</option>
+                            <option value="ERN">ERN</option>
+                            <option value="SZL">SZL</option>
+                            <option value="ETB">ETB</option>
+                            <option value="GMD">GMD</option>
+                            <option value="GHS">GHS</option>
+                            <option value="GNF">GNF</option>
+                            <option value="KES">KES</option>
+                            <option value="LSL">LSL</option>
+                            <option value="LRD">LRD</option>
+                            <option value="LYD">LYD</option>
+                            <option value="MGA">MGA</option>
+                            <option value="MWK">MWK</option>
+                            <option value="MRU">MRU</option>
+                            <option value="MUR">MUR</option>
+                            <option value="MAD">MAD</option>
+                            <option value="MZN">MZN</option>
+                            <option value="NAD">NAD</option>
+                            <option value="NGN">NGN</option>
+                            <option value="RWF">RWF</option>
+                            <option value="SCR">SCR</option>
+                            <option value="SLL">SLL</option>
+                            <option value="SOS">SOS</option>
+                            <option value="ZAR">ZAR</option>
+                            <option value="SSP">SSP</option>
+                            <option value="SDG">SDG</option>
+                            <option value="TZS">TZS</option>
+                            <option value="TND">TND</option>
+                            <option value="UGX">UGX</option>
+                            <option value="ZMW">ZMW</option>
+                            <option value="ZWL">ZWL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exchangerate">
+                1 CEDI = 128.16 NAIRA
+            </div>
+            <!-- area where calculated rate is shown -->
+
+            <button> Get Exchange Rate </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

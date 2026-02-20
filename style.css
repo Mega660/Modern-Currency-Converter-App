@@ -1,0 +1,119 @@
+/* import Google font for consistent typography across app */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* reset default spacing and apply box-sizing globally */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppin', sans-serif;
+    box-sizing: border-box;
+}
+/* center wrapper vertically/horizontally, set background */body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #030c33;
+}
+
+/* container for the converter card */
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 8px;
+    background: white;
+}
+
+.wrapper header{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #000708;
+}
+
+/* form spacing within wrapper */
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+ form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 550;
+    color: #000000;
+}
+
+/* styling for amount input field */
+ form input{
+    border: 2px solid#999;
+    height: 50px;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+/* focus state for amount input */
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #039126
+}
+
+/* container for the from/to dropdowns and swap icon */
+form .droplist{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* style for each currency select box (flag + dropdown) */
+.droplist .selectbox{
+    display: flex;
+    width: 100px;
+    height: 55px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid#999;
+}
+
+/* dropdown inside selectbox */
+.selectbox select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+
+/* flag image sizing */
+.selectbox img{
+     max-width: 25px;
+}
+
+/* swap icon styling */
+.icon{
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+form .exchangerate{
+    font-size: 18px;
+    margin: 20px 0 30px;
+    font-weight: 500;
+    text-decoration: #0f001d;
+}
+/* primary action button */form button{
+    height: 52px;
+    font-size: 18px;
+    cursor: pointer;
+    color:white;
+    background: rgb(1, 108, 207);
+}
